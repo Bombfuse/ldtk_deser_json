@@ -41,6 +41,7 @@ pub struct Level {
 
     /// An array containing all Layer instances. IMPORTANT: if the project option "Save levels separately" is enabled, this field will be null.
     /// This array is sorted in display order: the 1st layer is the top-most and the last is behind.
+    #[serde(alias = "layerInstances")]
     pub layer_instances: Option<Vec<LayerInstance>>,
 
     /// Height of the level in pixels

@@ -11,8 +11,8 @@ pub struct LayerInstance {
     pub c_hei: Int,
 
     /// Grid-based width
-    #[serde(alias = "__cWei")]
-    pub c_wei: Int,
+    #[serde(alias = "__cWid")]
+    pub c_wid: Int,
 
     /// Grid size
     #[serde(alias = "__gridSize")]
