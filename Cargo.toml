@@ -1,6 +1,6 @@
 [package]
 name = "ldtk_deser_json"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Just a 1:1 translation of LDTK project to a rust struct. Only from JSON"
 license = "MIT OR Apache-2.0"

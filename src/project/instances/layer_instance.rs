@@ -20,7 +20,7 @@ pub struct LayerInstance {
 
     /// Layer definition identifier
     #[serde(alias = "__identifier")]
-    pub identifier: Int,
+    pub identifier: String,
 
     /// Layer opacity as Float [0-1]
     #[serde(alias = "__opacity")]
