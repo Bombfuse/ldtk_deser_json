@@ -6,6 +6,9 @@ pub mod types;
 pub use serde;
 pub use serde_json;
 
-pub fn deserialize_project(json: String) -> Project {
-    serde_json::from_str(&json).unwrap()
+pub fn deserialize_project(json: String) -> Result<Project, String> {
+    match serde_json::from_str(&json) {
+        Ok(project) => Ok(project),
+        Err(e) => Err(format!("{:?}", e)),
+    }
 }
